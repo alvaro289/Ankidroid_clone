@@ -1,0 +1,29 @@
+{% extends "model.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card text-center">
+            <div class="card-header" style="height:60px;">
+                <h5>Inglés</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text" style="height: 138px; margin: 50px; padding:50px;">{{ingles}}</p>
+          </div>
+        </div>
+    </div>
+        <div class="col-sm-6">
+          <div class="card text-center">
+            <div class="card-header" style="height:60px">
+                <h5>Español</h5>
+            </div>
+            <div class="card-body" style="height: 182px; margin: 50px; padding: 65px;">
+              <p class="card-text">{{traduccion}}</p>
+              <a href="/es" class="btn btn-secondary" role="button" style="margin-top: 35px; width: 125px">Siguiente</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "model.html" %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card text-center">
+            <div class="card-header" style="height:60px;">
+                <h5>Inglés</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text" style="height: 138px; margin: 50px; padding:50px;">{{ingles}}</p>
+          </div>
+        </div>
+    </div>
+        <div class="col-sm-6">
+          <div class="card text-center">
+            <div class="card-header" style="height:60px">
+                <h5>Español</h5>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="form-group" style="height: 138px; margin: 50px 50px 50px 50px; padding:50px;">
+                            <input type="text" class="form-control" name="res" placeholder="Insert the traduction">
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}

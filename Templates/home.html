@@ -1,0 +1,20 @@
+{% extends "model.html" %}
+
+{% block content %}
+  <div class="container text-center py-5">
+    <h1>Bienvenidos a Ankidroid</h1>
+    <p>¿En que idioma quieres que aparezcan las tarjetas?</p>
+  </div>
+  <div class="container text-center">
+    <button type="button" class="btn btn-primary mr-5 btn-lg">
+      <a class="btn btn-primary" href="/se" role="button">
+        Español - Inglés
+      </a>
+    </button>
+    <button type="button" class="btn btn-primary btn-lg">
+      <a class="btn btn-primary" href="/es" role="button">
+        Inglés - Español
+      </a>
+    </button>
+  </div>
+{% endblock %}
